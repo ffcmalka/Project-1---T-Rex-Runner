@@ -21,9 +21,4 @@ I think I'm going to have a hard time working on the animation side of the proje
 #### How I plan to overcome challeneges
 I plan to overcome these challeneges by building a schedule for myself for the next week or completing most of what I need throughout the weekend, so it's not as much of a burden next week. For the animation and jumping function, I plan on doing some reasearch to learn, but thereafter it would be idle to finish throughout the weekend, so that I can debug throughout the week. 
 
-### MVP
-- The animation
-- CSS and timed intervals?
-- Allo the Dino
-- Making everything look nice
--
+
