@@ -1,6 +1,11 @@
 # Project-1-T-Rex-Runner
 T-Rex Runner Game
 
+
+<img width="872" alt="Screen Shot 2023-02-03 at 8 59 30 AM" src="https://user-images.githubusercontent.com/122708327/216624579-cad306e6-28ca-4458-a256-7ac73a429f5e.png">
+
+
+
 # Instructions
 Allo the T-rex Dino is running away from animal control that want to take him for being the only dino to exist in the 21st century! Help Allo escape and run away! There are obstacles that you will need to jump over by clicking down on your mousepad. If Allo doesn't make the jump, he will be taken! **Are you ready to help Allo?**
 
@@ -17,7 +22,8 @@ I think I'm going to have a hard time working on the animation side of the proje
 I plan to overcome these challeneges by building a schedule for myself for the next week or completing most of what I need throughout the weekend, so it's not as much of a burden next week. For the animation and jumping function, I plan on doing some reasearch to learn, but thereafter it would be idle to finish throughout the weekend, so that I can debug throughout the week. 
 
 ### MVP
-- The animation 
+- The animation
 - CSS and timed intervals?
 - Allo the Dino
 - Making everything look nice
+-
