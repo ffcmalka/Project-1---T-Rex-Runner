@@ -10,7 +10,8 @@ T-Rex Runner Game
 Allo the T-rex Dino is running away from animal control that want to take him for being the only dino to exist in the 21st century! Help Allo escape and run away! There are obstacles that you will need to jump over by clicking down on your mousepad. If Allo doesn't make the jump, he will be taken! **Are you ready to help Allo?**
 ## Credit
 I used ALOT of google to help me through out this. And I said I will give the credit where it's due: I completely took Alpagus idea on setting up a customized cursor.
-
+## MVP
+- The animation and jump function using JS and CSS
 
 ## How to get started
 - First I will start with building my HTML and creating different Ids for each element. **(example: "gameBoard")**
