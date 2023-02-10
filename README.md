@@ -11,8 +11,9 @@ Allo the T-rex Dino is running away from animal control that want to take him fo
 ## Credit
 I used ALOT of google to help me through out this. And I said I will give the credit where it's due: I completely took Alpagus idea on setting up a customized cursor.
 ## MVP
-- The animation and jump function using JS and CSS
-
+- jump function using JS and CSS
+- Display score everytime the character jumps
+- The animation of the obstacle (cactus) and of the character jumping
 ## How to get started
 - First I will start with building my HTML and creating different Ids for each element. **(example: "gameBoard")**
 - Then, I'm going to do some basic styling with my CSS, so I can then start my Javascript
