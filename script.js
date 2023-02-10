@@ -1,37 +1,58 @@
 //storing variables
-const allo = document.querySelector("allo");
-const obstacle = document.querySelector("obstacle");
+const allo = document.querySelector(".allo");
+const obstacle = document.querySelector(".obstacle");
 
+let score = 0;
+document.querySelector("#score").innerHTML = score;
 //funtionality for when the dino jumps
-//first creating a function of what to do when clicking space bar "32"
-function controls(e) {
-  if (e.keyCode === 32) {
-    jump()
-  }
-}
-//adding eventlisteners - we need the 2 parameters "keyup" and jump
-document.addEventListener('keyup', controls)
-
-//second creating the actual functionality for allos jump with time intervals so the animation isnt as direct
+// first creating a function of what to do when clicking space bar "32"
+// second creating the actual functionality for allos jump with time intervals so the animation isnt as direct
 function jump() {
-let position = 0
-let timerId = setInterval(function () {
+   if(allo.classList != "jump"){
+   allo.classList.add("jump");{
+    score += 1;
+    document.querySelector("#score").innerHTML = score;
+   setTimeout(function() {
+   allo.classList.remove("jump");
+ }, 300)
+}}}
 
-  //Allo jumping down
- if(position === 150) {
-  clearInterval(timerId)
-    console.log("jumped down")
-    let downTimerId = setInterval(function () {
-      if (position === 0) {
-        clearInterval(downTimerId)
-      }
-    position -= 30
-    allo.style.bottom = position + 'px'
-}, 20)
+ let isAlive = setInterval(() => {
+     let alloTop = parseInt(
+  window.getComputedStyle(allo).getPropertyValue("top") 
+  )
+//     console.log("check")
+ let obstacleLeft= parseInt(
+  window.getComputedStyle(obstacle).getPropertyValue("left")
+ )});
+ 
+document.addEventListener("keydown", function(event){
+  jump();
+
+
+//console.log("jump") 
+// function(event) {
+//   // if(event.keyCode === 32) {
+//       jump();
+//     })
+//checking for the collision
+if(obstacleLeft > 0 && obstacleLeft < 70 && alloTop >= 150) {
+  allo.style.animationPlayState = "paused";
+  obstacle.style.animationPlayState = "paused";
+   alert("You let Allo get caught! Dinosaurs are once again extinct. Game Over.");
+       window.location.reload();
  }
-// //Allo jumping up  
-  console.log("jumped up")
-  position += 30
-  allo.style.bottom = position + 'px'
-  }, 20)
- }
+},10)
+
+// document.addEventListener("keydown", (e) => {
+// if (e.keyCode === 32) {
+//     jump()
+//   }
+// })
+
+
+//the score
+ //  function drawScore() {
+// //   score += 1;
+// //   scoreDisplay.innerHTML = "Score: " + scoreSpan;
+//  }

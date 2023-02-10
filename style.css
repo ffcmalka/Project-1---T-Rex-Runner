@@ -1,41 +1,67 @@
 *{
   padding: 0;
   margin: 0;
-  
 }
-#game {
-  width: 500px;
-  height: 300px;
-  border: 2px solid black;
+
+body{
+ background-color: black;
+}
+
+p{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+img{
+ width: 150px;
+ height: 150px;
+ margin-left: 300px;
+}
+
+#game{
+  width: 600px;
+  height: 200px;
   background-image: url(—Pngtree—yellow\ background\ hand\ drawn\ cartoon_1024370.jpg);
   background-size: cover;
-  
+  border: 1px solid #000000;
+  margin: auto;
 }
 
-.dino {
-width: 50px;
-height: 50px;
-background-image: url("DinoSprites_mort.gif");
-background-size: 50px 50px;
-position: absolute;
-bottom: 480px;
-}
-@keyframes game{
-  0%{top: 150px;}
-  30%{top: 100px;}
-  70%{top: 100px;}
-  100%{top: 150px;}
-}
-
-.grid{
-  background-color: blue;
-  width: 10px;
+.allo{
+  width: 50px;
   height: 50px;
-  position: absolute;
-  top: 250px;
-  animation: block 1s infinite linear;
+  background-image: url(DinoSprites_mort.gif);
+  background-size: auto 50px;
+  position: relative;
+  top: 150px;
 }
-@keyframes block{
-  0%{left: 500px}
-  100%{left: -20px}
+
+.jump{
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+  0%{top: 150px;}
+  30%{top: 50px;}
+  70%{top: 50px;}
+  100%{top: 100px;}
+}
+
+.cactus{
+  width: 50px;
+  height: 40px;
+  position: relative;
+  top: 110px;
+  left: 580px; 
+  background-image: url(cactus-22155.png);
+  background-size: 50px 40px;
+  animation: cactus-block 1.7s infinite linear;
+}
+
+@keyframes cactus-block{
+  0%{left: 600px;}
+100%{left: -20px;}
 }
